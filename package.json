@@ -4,7 +4,8 @@
   "description": "Taxi party matching cross-platform application for KAIST people",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sudo npx node server"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,11 @@
   },
   "homepage": "https://github.com/sparcs-kaist/wika-backend#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.5",
+    "morgan": "^1.9.1",
+    "node": "^12.1.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
