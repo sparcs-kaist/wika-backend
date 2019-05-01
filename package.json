@@ -1,0 +1,28 @@
+{
+  "name": "wika-backend",
+  "version": "1.0.0",
+  "description": "Taxi party matching cross-platform application for KAIST people",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparcs-kaist/wika-backend.git"
+  },
+  "author": "sparcs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sparcs-kaist/wika-backend/issues"
+  },
+  "homepage": "https://github.com/sparcs-kaist/wika-backend#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1"
+  }
+}
