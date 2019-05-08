@@ -22,8 +22,6 @@ db.once('open', () => {
 });
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 
-Destination.insertMany([{name: 'asdf'}, {name: 'QWER'}]);
-
 app.use(morgan('dev', {
   skip: function (req, res) {
     return res.statusCode < 400;
