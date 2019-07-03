@@ -1,19 +1,23 @@
 const mongoose = require('mongoose');
 
 const partySchema = new mongoose.Schema({
-  state: Number,
+  state: {
+    type: String,
+    enum: ['active', 'full', 'canceled', 'expired', 'done'],
+  },
   members: [{
-    id: String,
-    startDate: Date,
-    endDate: Date,
-    people: {
-      min: Number,
-      max: Number,
-    },
-    comment: String,
+    type: mongoose.Schema.ObjectId,
+    ref: 'User',
   }],
+  limit: {
+    type: Number,
+    enum: [0, 2, 3, 4],
+  },
   origin: String,
   destination: String,
+  startDate: Date,
+  endDate: Date,
+  meetingTime: Date,
   cost: Number,
 });
 

@@ -22,6 +22,9 @@ db.once('open', () => {
 });
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }))
+
 app.use(morgan('dev', {
   skip: function (req, res) {
     return res.statusCode < 400;
